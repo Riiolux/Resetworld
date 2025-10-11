@@ -1,0 +1,7 @@
+name: Resetworl
+version: '1.0-SNAPSHOT'
+main: de.riolux.resetworl.Main
+api-version: '1.21'
+load: STARTUP
+commands:
+  restartworld:
