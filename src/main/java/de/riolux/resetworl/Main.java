@@ -29,13 +29,13 @@ private static  Main instance;
             File world = new File(Bukkit.getWorldContainer() , "world");
             File nether = new File(Bukkit.getWorldContainer() , "world_nether");
             File end = new File(Bukkit.getWorldContainer() , "world_end");
-
+            File theend = new File(Bukkit.getWorldContainer() , "world_the_end");
 
 
             FileUtils.deleteDirectory(world);
             FileUtils.deleteDirectory(nether);
             FileUtils.deleteDirectory(end);
-
+            FileUtils.deleteDirectory(theend);
 
             world.mkdirs();
             nether.mkdirs();
@@ -58,6 +58,12 @@ private static  Main instance;
             new File(end, "playerdata").mkdirs();
             new File(end, "poi").mkdirs();
             new File(end, "region").mkdirs();
+
+            new File(theend, "data").mkdirs();
+            new File(theend, "datapacks").mkdirs();
+            new File(theend, "playerdata").mkdirs();
+            new File(theend, "poi").mkdirs();
+            new File(theend, "region").mkdirs();
         } catch (IOException e) {
             throw new RuntimeException("passiert eigentlich nie (hoffentlich)");
         }
