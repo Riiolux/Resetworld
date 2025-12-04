@@ -31,7 +31,6 @@ private static  Main instance;
             File end = new File(Bukkit.getWorldContainer() , "world_end");
             File theend = new File(Bukkit.getWorldContainer() , "world_the_end");
 
-
             FileUtils.deleteDirectory(world);
             FileUtils.deleteDirectory(nether);
             FileUtils.deleteDirectory(end);
